@@ -1,5 +1,8 @@
-# Gt
-## by gfh
+# Peter's project
+## Author
+ Peter
+
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Table of Contents 
 1. [description](#description)
@@ -7,25 +10,29 @@
 3. [usage](#usage)
 4. [input](#input)
 5. [contributing](#contributing)
-6. [contact](#contact)
+6. [license](#license)
+7. [contact](#contact)
 
 ## description
-fghj
+This app does everything 
 
 ## installation 
-fghj
+get it from the app store
 
 ## usage 
-fghj
+however they want
 
 ## input
 undefined
 
 ## contributing
-fgh
+conact me
+
+## license
+MIT
 
 ## contact
-email: fgh
+email: (pconsagra@g.ucla.edu)
 
-github: (https://github.com/fg)
+github: (https://github.com/pcon27)
     

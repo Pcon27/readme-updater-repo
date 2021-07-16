@@ -7,13 +7,16 @@ const generateMarkdown = (data) =>
 ## Author
  ${data.name}
 
+[![License](https://img.shields.io/badge/License-${data.license}-${data.color}.svg)](https://opensource.org/licenses/${data.license})
+
 # Table of Contents 
 1. [description](#description)
 2. [installation](#installation)
 3. [usage](#usage)
 4. [input](#input)
 5. [contributing](#contributing)
-6. [contact](#contact)
+6. [license](#license)
+7. [contact](#contact)
 
 ## description
 ${data.description}
@@ -29,6 +32,9 @@ ${data.input}
 
 ## contributing
 ${data.contributing}
+
+## license
+This application is using the ${data.license} license. 
 
 ## contact
 email: (${data.email})
@@ -66,13 +72,20 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'liscence',
-        message: 'what is the liscence for this application?',
-    },
-    {
-        type: 'input',
         name: 'contributing',
         message: 'how could/should one contribute to this application?',
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'what is the liscence for this application?',
+        choices: ["MIT", "ISC", "IBM", "BDDL"]
+    },
+    {
+        type: 'list',
+        name: 'color',
+        message: 'what color is the liscence for this application?',
+        choices: ["blue", "green", "yellow", "red"]
     },
     {
         type: 'input',
