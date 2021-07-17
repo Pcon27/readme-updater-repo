@@ -1,4 +1,4 @@
-# Readme Generator
+# Sample Readme Generator
 ### Author
  Peter Consagra
 
