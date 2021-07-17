@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const generateMarkdown = (data) =>
 `# ${data.title}
-## Author
+### Author
  ${data.name}
 
 [![License](https://img.shields.io/badge/License-${data.license}-${data.color}.svg)](https://opensource.org/licenses/${data.license})
@@ -12,38 +12,38 @@ const generateMarkdown = (data) =>
 ---
 
 # Table of Contents 
-1. [description](#description)
-2. [installation](#installation)
-3. [usage](#usage)
-4. [input](#input)
-5. [contributing](#contributing)
-6. [license](#license)
-7. [contact](#contact)
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+5. [Contributing](#contributing)
+6. [Testing](#tests)
+7. [License](#license)
+8. [Contact](#contact)
 
 ---
 
-## description
+## Description
 ${data.description}
 
-## installation 
+## Installation 
 ${data.installation}
 
-## usage 
+## Usage 
 ${data.usage}
 
-## input
-${data.input}
-
-## contributing
+## Contributing
 ${data.contributing}
 
-## license
+## Tests
+${data.tests}
+
+## License
 This application is using the ${data.license} license. 
 
-## contact
+## Contact
 email: (${data.email})
 
-github: (https://github.com/${data.github})
+Github: (https://github.com/${data.github})
     `;
 
 
@@ -80,6 +80,11 @@ const questions = [
         message: 'how could/should one contribute to this application?',
     },
     {
+        type: 'input',
+        name: 'tests',
+        message: 'how could I test this application?',
+    },
+    {
         type: 'list',
         name: 'license',
         message: 'what is the liscence for this application?',
@@ -113,10 +118,3 @@ inquirer
     err? console.log("error!") : console.log("successfully created reademe!")
     );
 });
-
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
