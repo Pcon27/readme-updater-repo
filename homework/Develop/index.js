@@ -9,6 +9,8 @@ const generateMarkdown = (data) =>
 
 [![License](https://img.shields.io/badge/License-${data.license}-${data.color}.svg)](https://opensource.org/licenses/${data.license})
 
+---
+
 # Table of Contents 
 1. [description](#description)
 2. [installation](#installation)
@@ -17,6 +19,8 @@ const generateMarkdown = (data) =>
 5. [contributing](#contributing)
 6. [license](#license)
 7. [contact](#contact)
+
+---
 
 ## description
 ${data.description}
